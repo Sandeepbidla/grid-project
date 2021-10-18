@@ -1,0 +1,115 @@
+@import "reset";
+@import "variables";
+@import "mixin";
+
+main{
+    max-width: 960px;
+    margin: 50px auto;
+    padding: 10px;
+    color: $text-white;
+    height:100vh;
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.div1{
+    background-color: $bg-color-cyan;
+    color: $text-green;
+    border: $border-default;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 3/3;
+   @include flex_prop;
+}
+
+.div2{
+    background-color: $bg-color-green;
+    color: $text-white;
+    border: $border-default;
+    grid-row: 3/5 ;
+    @include flex_prop;
+}
+.div3{
+    background-color: $bg-color-green;
+    color: $text-white;
+    border: $border-default;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    @include flex_prop;
+}
+.div4{
+    background-color: $bg-color-yellow;
+    color: $text-black;
+    border: $border-default;
+    @include flex_prop;
+}
+.div5{
+    background-color: $bg-color-yellow;
+    color: $text-black;
+    border: $border-default;
+    @include flex_prop;
+}
+.div6{
+    background-color: $bg-color-purple;
+    color: $text-blue;
+    border: $border-default;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    @include flex_prop;
+}
+.div7{
+    background-color: $bg-color-gray;
+    color: $text-yellow;
+    border: $border-default;
+    @include flex_prop;
+}
+.div8{
+    background-color: $bg-color-gray;
+    color: $text-red;
+    border: $border-default;
+    @include flex_prop;
+}
+
+.div9{
+    background-color: $bg-color-orange;
+    color: $text-blue;
+    border: $border-default;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    @include flex_prop;
+}
+.div10{
+    background-color: $bg-color-gray;
+    color: $text-darkblue;
+    border: $border-default;
+    @include flex_prop;
+}
+
+.div11{
+    background-color: $text-black;
+    color: $text-yellow;
+    border: $border-default;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row: 1/2;
+    grid-column: 1/5;
+    @include flex_prop;
+}
+.div12{
+    background-color: $bg-color-red;
+    border: $border-default;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row: 2/2;
+    grid-column: 1/4;
+    @include flex_prop;
+}
+.div13{
+    background-color: $text-black;
+    color: $text-red;
+    border: $border-default;
+    grid-row: 2/3 ;
+    @include flex_prop;
+}
